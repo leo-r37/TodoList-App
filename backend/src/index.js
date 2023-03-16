@@ -1,5 +1,16 @@
 import app from "./app";
+const { conn } = require("./database");
 
-app.listen(3000, () => {
-  console.log("server on port 3000");
-});
+require("dotenv").config();
+const PORT = process.env.PORT || 3000;
+
+conn
+  .sync({
+    // force: true,
+    // alter: true
+  })
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log("server on port", PORT);
+    });
+  });

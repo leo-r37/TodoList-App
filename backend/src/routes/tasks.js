@@ -4,7 +4,7 @@ import {
   deleteTask,
   getTask,
   getTasks,
-  getTasksCount,
+  // getTasksCount,
   updateTask,
 } from "../controller/tasks";
 
@@ -31,7 +31,7 @@ router.get("/tasks", getTasks);
  *  summary: Get total tasks counter
  *  tags: [Tasks]
  */
-router.get("/tasks/count", getTasksCount);
+// router.get("/tasks/count", getTasksCount);
 
 /**
  * @swagger

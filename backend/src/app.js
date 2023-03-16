@@ -6,6 +6,8 @@ import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express";
 import { options } from "./swaggerOptions";
 
+require("./database.js");
+
 const specs = swaggerJSDoc(options);
 
 import tasksRoutes from "./routes/tasks";
