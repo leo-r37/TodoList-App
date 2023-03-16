@@ -20,7 +20,7 @@ const App = () => {
           name="HomeScreen"
           component={HomeScreen}
           options={({ navigation }) => ({
-            headerStyle: { backgroundColor: "#222f3e" },
+            headerStyle: { backgroundColor: "#3d61c7" },
             headerTitleStyle: { color: "#fff" },
             title: "Tasks App",
             headerRight: () => (
@@ -40,7 +40,7 @@ const App = () => {
           options={{
             title: "Create a task",
             headerStyle: {
-              backgroundColor: "#222f3e",
+              backgroundColor: "#3d61c7",
             },
             headerTitleStyle: {
               color: "#fff",

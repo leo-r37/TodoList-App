@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FlatList, RefreshControl } from "react-native";
+import { Text, FlatList, RefreshControl } from "react-native";
 import { deleteTask, getTasks } from "../api";
 import { useIsFocused } from "@react-navigation/native";
 
@@ -34,6 +34,8 @@ const Tasklist = () => {
     await loadTask();
     setRefreshing(false);
   });
+
+  if (tasks.length <= 0) return <Text>No hay tareas</Text>;
 
   return (
     <FlatList

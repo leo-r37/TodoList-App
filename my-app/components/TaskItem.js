@@ -19,7 +19,7 @@ const TaskItem = ({ task, handleDelete }) => {
       </TouchableOpacity>
 
       <TouchableOpacity
-        style={{ backgroundColor: "#ee5253", padding: 7, borderRadius: 5 }}
+        style={{ backgroundColor: "#ea4c89", padding: 7, borderRadius: 5 }}
         onPress={() => handleDelete(task.id)}
       >
         <Text style={{ color: "#fff" }}>{trash}</Text>
@@ -30,7 +30,7 @@ const TaskItem = ({ task, handleDelete }) => {
 
 const styles = StyleSheet.create({
   itemContainer: {
-    backgroundColor: "#333333",
+    backgroundColor: "#9decff",
     padding: 20,
     marginVertical: 8,
     borderRadius: 5,
@@ -39,13 +39,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   itemTitle: {
-    color: "#fff",
+    color: "#000",
     fontWeight: "bold",
     fontSize: 14,
     marginBottom: 5,
   },
   itemDescription: {
-    color: "#fff",
+    color: "#000",
   },
 });
 
