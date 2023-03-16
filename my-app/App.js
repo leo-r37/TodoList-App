@@ -8,7 +8,11 @@ import TaskFormScreen from "./screens/TaskFormScreen";
 
 const Stack = createNativeStackNavigator();
 
+import Icon from "react-native-vector-icons/FontAwesome";
+
 const App = () => {
+  const plus = <Icon name="plus-square" size={30} color="#fff" />;
+
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -24,7 +28,7 @@ const App = () => {
                 onPress={() => navigation.navigate("TaskFormScreen")}
               >
                 <Text style={{ color: "#fff", marginRight: 20, fontSize: 15 }}>
-                  New
+                  {plus}
                 </Text>
               </TouchableOpacity>
             ),
