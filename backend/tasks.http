@@ -16,12 +16,12 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "title": "six task",
-    "description": "some description for six"
+    "title": "Second task",
+    "description": "some description for the 2nd one"
 }
 
 ###
-DELETE {{api}}/4
+DELETE {{api}}/12
 
 ###
 PUT {{api}}/1
